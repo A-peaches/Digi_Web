@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('css/MyFont.ttf') format('truetype');
+}
+
+h2 {
+    color: green;
+    margin:30px;
+}
+
+span {
+    color:orchid;
+    font-weight: bold;
+}
+
+.body {
+    text-align: center;
+    font-family: 'MyFont';
+    margin: 0px auto;
+}
+
+#today {
+   font-size: 18;
+   color:slateblue;
+   font-weight: bold;
+}
+
+.title {
+    font-size: 18pt;
+}
+.bold {
+    font-weight: bold;
+}
+.pink {
+    color:hotpink;
+}

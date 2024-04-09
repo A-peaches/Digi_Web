@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title>Join</title>
+
+    <style>
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('css/MyFont.ttf') format('truetype');
+        }
+
+        body {
+            background-color: white;
+            line-height: 200% ;
+            font-family : 'MyCustomFont';
+        }
+
+        button {
+            font-family : 'MyCustomFont';
+        }
+
+
+        table {
+            color: rgb(96, 95, 95);
+        }
+    </style>
+</head>
+
+<body>
+    <div style='margin:20px'>
+        <h2 align='center' style="color:rgb(96, 95, 95); font-weight: bold; font-size :20pt;"> 회원 가입 </h2>
+        <hr>
+        <div align='center' style='margin:20px'>
+            <form>
+                <table border='1' width='670' style='border-collapse: collapse; background-color: white;'>
+                    <tr>
+                        <td colspan='2' align='center' style="background-color: #faf8f5;">
+                            <h3 style='margin:8px'>회원 기본 정보</h3>
+                        </td>
+                    </tr>
+                    <tr style='height:45px'>
+                        <td>아이디 : </td>
+                        <td>
+                            <input type='text' name='id' size='20' maxlength=20></input>
+                            <a>4~12자의 영문 대소문자와 숫자로만 입력</a>
+                        </td>
+                    </tr>
+                    <tr style='height:45px'>
+                        <td>비밀번호 : </td>
+                        <td>
+                            <input type='password' name='pw' size='20' maxlength=20></input>
+                            <a>4~12자의 영문 대소문자와 숫자로만 입력</a>
+                        </td>
+                    </tr>
+                    <tr style='height:45px'>
+                        <td>비밀번호 확인 : </td>
+                        <td>
+                            <input type='password' name=' pw' size='20' maxlength=20></input>
+                        </td>
+                    </tr>
+                    <tr style='height:45px'>
+                        <td>메일 주소: </td>
+                        <td>
+                            <input type='text' name='email' size='20' maxlength=20></input>
+                            <a> 예) id@domain.com </a>
+                        </td>
+                    </tr>
+                    <tr style='height:45px'>
+                        <td colspan='2' align='center' style="background-color: #faf8f5;">
+                            <h3 style='margin:5px'>개인 신상 정보</h3>
+                        </td>
+                    </tr>
+                    <tr style='height:45px'>
+                        <td>주민등록번호 : </td>
+                        <td>
+                            <input type='text' name='IdNo' size='20' maxlength=20></input>
+                            <a> 예) 1234561234567 </a>
+                        </td>
+                    </tr>
+                    <tr style='height:45px'>
+                        <td>생일 : </td>
+                        <td>
+                            <input type='text' name='registerNo' size='5' maxlength=20>년</input>
+                            <select name='month' size=1>
+                                <option value='month'>1</option>
+                                <option value='month'>2</option>
+                                <option value='month'>3</option>
+                                <option value='month'>4</option>
+                                <option value='month'>5</option>
+                                <option value='month'>6</option>
+                                <option value='month'>7</option>
+                                <option value='month'>8</option>
+                                <option value='month'>9</option>
+                                <option value='month'>10</option>
+                                <option value='month'>11</option>
+                                <option value='month'>12</option>
+                            </select>월
+                            <select name='Day' size=1>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>일
+                        </td>
+                    </tr>
+                    <tr style='height:45px'>
+                        <td>관심분야 : </td>
+                        <td>
+                            <input type='checkbox' name='habit' value='컴퓨터' checked>컴퓨터</input>
+                            <input type='checkbox' name='habit' value='인터넷'>인터넷</input>
+                            <input type='checkbox' name='habit' value='여행'>여행</input>
+                            <input type='checkbox' name='habit' value='영화감상'>영화감상</input>
+                            <input type='checkbox' name='habit' value='음악감상'>음악감상</input>
+                        </td>
+                    </tr>
+                    <tr style='height:65px'>
+                        <td>자기 소개 :</td>
+                        <td>
+                            <textarea name='my_intro' cols='60' rows='5'></textarea>
+                        </td>
+                    </tr>
+                </table>
+                <div style='margin:20px'>
+                    <button type="submit"><a href='mailto:mail@kakao.com?subject=join'
+                            style="text-decoration: none; color:black;">회원 가입</a></button>
+                    <button type="reset">다시 입력</button>
+                </div>
+            </form>
+        </div>
+        <div align="end" style="margin:40px">
+            <audio controls loop align="center">
+                <source src="css/music.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
