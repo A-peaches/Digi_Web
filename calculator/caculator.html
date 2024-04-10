@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caculator</title>
+    <script src="calculator.js"></script>
+    <style type="text/css">
+        @import url("calculator.css");
+    </style>
+</head>
+<body>
+    <div>
+    <h1>✏️ 사칙연산 계산기</h1>
+    </div> <hr>
+    <div>
+    <h3>⚠️ 숫자만 입력 가능합니다!</h3><br>
+    <form>
+    <input type="number" class="number-input" id="num1"></idiv>
+    <select class="operator" id="op" size="1">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" class="number-input" id="num2"></input>
+    <span>=</span>
+    <input type="result" class="result" id="result" value=""disabled></input>
+    <br>
+    <input type="button" class="button" id="run" value="계산"
+    onclick="caculation()"></input>
+    <input type="reset" class="button"  value="초기화"></input>
+    </form>
+</div>
+</body>
+</html>

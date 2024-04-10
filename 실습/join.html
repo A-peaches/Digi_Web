@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
     <title>Join</title>
 
@@ -12,71 +12,99 @@
             background-color: white;
             line-height: 200% ;
             font-family : 'MyCustomFont';
+            margin : auto;
         }
 
         button {
             font-family : 'MyCustomFont';
+            background-color: white;
+            border: 1px solid rgb(96, 95, 95);
+            padding : 12px 12px;
+            cursor:pointer;
+            font-size : 17px;
         }
 
 
         table {
             color: rgb(96, 95, 95);
+            border: 1px solid rgb(96, 95, 95);
+            width : 670px;
+            border-collapse: collapse; 
+            background-color: white;
+        }
+
+        h2 {
+            color:rgb(96, 95, 95); 
+            font-weight: bold; 
+            font-size :20pt;
+        }
+
+        tr, td{
+            height:45px;
+            border: 1px solid rgb(96, 95, 95);
+            padding: 8px;
+        }
+
+        .subtitle {
+            margin:8px;
+            text-align:center ;
+            background-color : #faf8f5;
         }
     </style>
 </head>
 
 <body>
     <div style='margin:20px'>
-        <h2 align='center' style="color:rgb(96, 95, 95); font-weight: bold; font-size :20pt;"> 회원 가입 </h2>
-        <hr>
+        <h2 align='center'> 👥 회원 가입 </h2>
+        <hr style=>
         <div align='center' style='margin:20px'>
             <form>
-                <table border='1' width='670' style='border-collapse: collapse; background-color: white;'>
+                <table>
                     <tr>
-                        <td colspan='2' align='center' style="background-color: #faf8f5;">
-                            <h3 style='margin:8px'>회원 기본 정보</h3>
+                        <td class="subtitle" colspan='2'>
+                            <h3 class="subtitle">회원 기본 정보</h3>
                         </td>
                     </tr>
-                    <tr style='height:45px'>
+                    <tr>
                         <td>아이디 : </td>
                         <td>
                             <input type='text' name='id' size='20' maxlength=20></input>
                             <a>4~12자의 영문 대소문자와 숫자로만 입력</a>
                         </td>
                     </tr>
-                    <tr style='height:45px'>
+                    <tr>
                         <td>비밀번호 : </td>
                         <td>
                             <input type='password' name='pw' size='20' maxlength=20></input>
                             <a>4~12자의 영문 대소문자와 숫자로만 입력</a>
                         </td>
                     </tr>
-                    <tr style='height:45px'>
+                    <tr>
                         <td>비밀번호 확인 : </td>
                         <td>
                             <input type='password' name=' pw' size='20' maxlength=20></input>
                         </td>
                     </tr>
-                    <tr style='height:45px'>
+                    <tr>
                         <td>메일 주소: </td>
                         <td>
                             <input type='text' name='email' size='20' maxlength=20></input>
                             <a> 예) id@domain.com </a>
                         </td>
                     </tr>
-                    <tr style='height:45px'>
-                        <td colspan='2' align='center' style="background-color: #faf8f5;">
-                            <h3 style='margin:5px'>개인 신상 정보</h3>
+                    <tr>
+                        <td colspan='2' class="subtitle">
+                            <h3 class="subtitle">개인 신상 정보</h3>
                         </td>
                     </tr>
-                    <tr style='height:45px'>
+                    <tr>
                         <td>주민등록번호 : </td>
                         <td>
                             <input type='text' name='IdNo' size='20' maxlength=20></input>
                             <a> 예) 1234561234567 </a>
                         </td>
                     </tr>
-                    <tr style='height:45px'>
+                    <tr>
                         <td>생일 : </td>
                         <td>
                             <input type='text' name='registerNo' size='5' maxlength=20>년</input>
@@ -147,7 +175,7 @@
                     </tr>
                 </table>
                 <div style='margin:20px'>
-                    <button type="submit"><a href='mailto:mail@kakao.com?subject=join'
+                    <button type="submit" style="margin:5px 20px auto;"><a href='mailto:mail@kakao.com?subject=join'
                             style="text-decoration: none; color:black;">회원 가입</a></button>
                     <button type="reset">다시 입력</button>
                 </div>

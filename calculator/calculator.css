@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "MyFont";
+    src: url('../css/MyFont.ttf');
+}
+
+body {
+    font-family: "MyFont";
+}
+
+div {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.number-input {
+    width: 60px;
+    height: 60px;
+    font-family: "MyFont";
+    font-size: 20pt;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.operator{
+    width: 65px;
+    height: 65px;
+    font-size: 20pt;
+    font-family: "MyFont";
+}
+
+span{
+    font-size: 30pt;
+    font-family: "MyFont";
+
+}
+
+.result{
+    width: 90px;
+    height: 60px;
+    font-size: 20pt;
+    font-family: "MyFont";
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.button {
+    margin : 40px 5px 40px 5px;
+    font-family: "MyFont";
+    font-size : 15pt;
+    padding : 10px 18px;
+    background-color: whitesmoke;
+    cursor:pointer;
+    border: 1px solid rgb(96, 95, 95);
+}

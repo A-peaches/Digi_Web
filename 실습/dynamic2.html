@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Apeach</title>
+    <style type="text/css">
+        @import url("03.css");
+
+        span {
+            font-size: 20pt;
+        }
+
+        input {
+            font-size: 15pt;
+            margin: 20px;
+            font-family: "Myfont";
+        }
+
+        .radio {
+            font-size: 30px;
+        }
+
+        div{
+            margin:30px 30px 30px 30px;
+        }
+
+    </style>
+    <!-- <script src="script.js"> -->
+    <script>
+        // function changeBg(color) {
+        //     document.bgColor = color;
+        // }
+
+        // function sayHello(){
+        //     var textBox = document.getElementById("myName");
+        //     if(textBox != null) {
+        //         alert(textBox.value + "님 안녕하세요! ")
+        //     }
+        // }
+
+        // function findSubject(){
+        //     // var arrRadio = document.getElementsByName("subject");
+        //     var arrRadio = document.getElementsByTagName("input");
+
+        //     for(var i=0; i<arrRadio.length; i++ ){
+        //         if(arrRadio[i].type == "radio" && arrRadio[i].checked){
+        //             alert(arrRadio[i].value  +" 과목을 좋아하시는 군요!");
+        //             break;
+        //         }
+        //     }
+        // }
+
+        function findFood(){
+            var arrFood = document.getElementsByName("food");
+            var checkedFood = "";
+            for(var i=0; i<arrFood.length; i++){
+                if(arrFood[i].checked) {
+                    checkedFood += arrFood[i].value + "\n";
+                }
+            }
+
+            alert(checkedFood +"를 좋아하시는군요!");
+        }
+    </script>
+</head>
+    <!-- <br>
+    <span>선호하는 색을 골라주세요.</span><br>
+    <input type="radio" class="radio" name="color" value="yellow" onClick="changeBg(this.value)">노란색</input><br>
+    <input type="radio" class="radio" name="color" value="green" onClick="changeBg(this.value)">녹색</input><br>
+    <input type="radio" class="radio" name="color" value="blue" onClick="changeBg(this.value)">파란색</input><br>
+    <input type="radio" class="radio" name="color" value="red" onClick="changeBg(this.value)">빨간색</input><br>
+    <input type="radio" class="radio" name="color" value="white" onClick="changeBg(this.value)">흰색</input><br> -->
+    <!-- <hr> -->
+    <!-- <div>
+        <h2>반갑게 인사하기</h2>
+        <input type="text" id="myName" name="name"></input>
+        <input type="button" name="button" onclick="sayHello()"value="인사하기"></input>
+    </div>
+    <div> 
+        <hr>
+        <span>제일 좋아하는 과목은?</span><br>
+        <input type="radio" class="radio" name="subject" value="HTML">HTML</input><br>
+        <input type="radio" class="radio" name="subject" value="CSS">CSS</input><br>
+        <input type="radio" class="radio" name="subject" value="javaScript">javaScript</input><br>
+        <input type="button" name="button" onclick="findSubject()" value="답안지 제출"></input>
+    </div> -->
+    <div> 
+        <!-- <hr> -->
+        <span>제일 좋아하는 디저트는?</span><br>
+        <input type="checkbox" class="food" name="food" value="cake">cake</input><br>
+        <input type="checkbox" class="food" name="food" value="macaron">macaron</input><br>
+        <input type="checkbox" class="food" name="food" value="pudding">pudding</input><br>
+        <input type="checkbox" class="food" name="food" value="muffin">muffin</input><br>
+        <input type="checkbox" class="food" name="food" value="cookie">cookie</input><br>
+        <input type="button" name="food" onclick="findFood()" value="답안지 제출"></input>
+    </div>
+</body>
+
+</html>
