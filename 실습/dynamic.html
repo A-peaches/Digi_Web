@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Script Dynamic page</title>
+    <style>
+       @font-face {
+        font-family: 'MyFont';
+        src: url('css/MyFont.ttf') format("TrueType");
+       }
+
+       script {
+        font-family: 'MyFont';
+        text-align: center;
+        font-size: 18px;
+       }
+
+       body {
+        font-family: 'MyFont';
+       }
+    </style>
+    <script language = "javascript">
+        // document.write("Hello.. javaScript");
+        var firstName='Pipi';
+        var lastName = 'Kim';
+        // try {
+        //     document.write("내 이름은 "+ lastName + "입니다.");
+        // } catch(ex) {
+        //     document.write(ex.message);
+        // // }
+
+        // function sayHello() {
+        //     document.write("안녕하세요? javaScript function입니다.");
+        // }
+        // sayHello();
+        // var userInput = prompt('What is your name?')
+        // alert(userInput + "님 환영합니다.");
+
+        // document.write("현재 로그인 정보는 "+userInput+" 입니다.");
+        // function add (num1,num2) {
+        //     document.write(num1+" + "+num2+" = "+
+        //     (num1+num2)+" 입니다.")
+        // }
+
+        // var result=confirm('지금 배가 많이 고프신가요?');
+
+        // if(result) {
+        //     alert('한시간 남았어요! 화이팅!');
+        // } else {
+        //     alert('한시간 뒤에 점심먹으니까 간식 금지!')
+        // }
+
+        // document.write("오늘은 4월 9일입니다<br>");
+        // document.write("내일은 선거날!~");
+        // window.open("http://www.naver.com","popup1",
+        // "left=50, top=50, width=800, height=800, location=yes,status=no");
+        var count = 0;
+
+        function sayHello(){
+            alert("Hello! setTimeout 메서드가 실행해 준 함수입니다.");
+            count++;
+
+            if(count == 3){
+            clearInterval(timer);
+            }
+        }
+        var timer = setInterval(sayHello,1000);
+        
+        // setTimeout(sayHello,3000);
+       
+            
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
