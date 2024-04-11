@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+    <title>Join</title>
+    <style type="text/css">
+      @import url("join.css");
+    </style>
+    <script src="join.js"></script>
+    <script src="/css/mouse.js"></script>
+</head>
+
+<body>
+    <div style='margin:20px'>
+        <h2 align='center'> 👥 회원 가입 </h2>
+        <hr style=>
+        <div align='center' style='margin:20px'>
+            <form>
+                <table>
+                    <tr>
+                        <td class="subtitle" colspan='2'>
+                            <h3 class="subtitle">회원 기본 정보</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>아이디 : </td>
+                        <td>
+                            <input type='text' id= "id" class='input'  class='input' size='20' maxlength=20></input>
+                            <a>4~12자의 영문 대소문자와 숫자로만 입력</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호 : </td>
+                        <td>
+                            <input type='password' id="pw"  size='20'class='input' maxlength=20></input>
+                            <a>4~12자의 영문 대소문자와 숫자로만 입력</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호 확인 : </td>
+                        <td>
+                            <input type='password' id="pw2" class='input' size='20' maxlength=20></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>메일 주소: </td>
+                        <td>
+                            <input type='text' id='email' class='input' size='20' maxlength=20></input>
+                            <a> 예) id@domain.com </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>이름: </td>
+                        <td>
+                            <input type='text' id='name' class='input' size='20' maxlength=20></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan='2' class="subtitle">
+                            <h3 class="subtitle">개인 신상 정보</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>주민등록번호 : </td>
+                        <td>
+                            <input type='text' id='idNo' class='input' size='20' maxlength=20></input>
+                            <a> 예) 1234561234567 </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>생일 : </td>
+                        <td>
+                            <input  type='text' id='year' size='5' maxlength=20 style="height: 20px;">년</input>
+                            <select class='input' id='month' size=1>
+                                <option value='1'>1</option>
+                                <option value='2'>2</option>
+                                <option value='3'>3</option>
+                                <option value='4'>4</option>
+                                <option value='5'>5</option>
+                                <option value='6'>6</option>
+                                <option value='7'>7</option>
+                                <option value='8'>8</option>
+                                <option value='9'>9</option>
+                                <option value='10'>10</option>
+                                <option value='11'>11</option>
+                                <option value='12'>12</option>
+                            </select>월
+                            <select class='input' id='day' size=1>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>일
+                        </td>
+                    </tr>
+                    <tr style='height:45px'>
+                        <td>관심분야 : </td>
+                        <td>
+                            <input type='checkbox' name='habit' value='컴퓨터'>컴퓨터</input>
+                            <input type='checkbox' name='habit' value='인터넷'>인터넷</input>
+                            <input type='checkbox' name='habit' value='여행'>여행</input>
+                            <input type='checkbox' name='habit' value='영화감상'>영화감상</input>
+                            <input type='checkbox' name='habit' value='음악감상'>음악감상</input>
+                        </td>
+                    </tr>
+                    <tr style='height:65px'>
+                        <td>자기 소개 :</td>
+                        <td>
+                            <textarea id='myInfo' cols='65' rows='6'></textarea>
+                            <small>30자이상</small>
+                        </td>
+                    </tr>
+                </table>
+                <div style='margin:20px'>
+                    <input type="submit" class="btn" style="margin:5px 20px auto;" value ="회원 가입" onclick="onClick()"><a href='#'
+                            style="text-decoration: none; color:black;" ></a></input>
+                    <input type="reset"class="btn"  value="다시 입력"></input>
+                    
+                </div>
+            </form>
+        </div>
+        <div align="end" style="margin:40px">
+            <audio controls loop align="center">
+                <source src="music.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
