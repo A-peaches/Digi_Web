@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "MyFont";
+            src: url('../src/assets/MyFont.ttf');
+        }
+        div {
+            margin : 20px 300px 20px 300px;
+            text-align: center;
+            font-family: "Myfont" , sans-serif;
+        }
+
+        span {
+            margin : 50px 30px 30px 50px;
+            font-size:30px;
+        }
+
+        .btn{
+            font-family: "MyFont";
+            font-size: 13pt;
+            margin-left : 15px;
+            margin-top : 10px;
+            margin-bottom : 10px;
+        }
+
+        .good {
+            font-size: 30pt;
+            margin: 0px;
+            border:none;
+            cursor:pointer;
+            background-color: transparent;
+        }
+    </style>
+    
+    <script>
+        let styles = ["👗👠👛","🩱🩴👝","👚👖👟","👔👜🥾","🧣🧤"];
+        let idx = 0;
+        let good = 0;
+        function changeStyle(){
+            if(idx < 4 ){
+                idx++;
+            } else {
+                idx = 0;
+            }
+            document.getElementById("fashion").innerHTML= styles[idx];
+        }
+
+        function changeGood(){
+            good++;
+            document.getElementById("good").innerHTML= good;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1 style="font-size: 30pt">🤗 Welcome!</h1><hr>
+        <span>오늘의 옷추천</span><br>
+        <div><span id="fashion" style="font-size: 50px;">❔</span></div>
+        <input type="button" id="btn-st" class="btn"value="스타일뽑기" onclick="changeStyle()"></input>
+    </div>
+    <div>
+        <input type="button" id="btn-good" class="good" value="👍" onclick="changeGood()">
+        <span style="font-size:15pt; margin-left: 10px;">좋아요 : </span>
+        <span id="good" style="font-size:15pt; margin-left:0px">0</span>
+    </div>
+</body>
+</html>

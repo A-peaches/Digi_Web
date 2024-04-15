@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('MyFont.ttf') format('truetype');
+}
+
+body {
+    background-color: white;
+    line-height: 200% ;
+    font-family : 'MyCustomFont';
+    margin : auto;
+}
+
+.btn {
+    font-family : 'MyCustomFont';
+    background-color: white;
+    border: 1px solid rgb(96, 95, 95);
+    padding : 12px 12px;
+    cursor:pointer;
+    font-size : 17px;
+}
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat985.cur), auto !important;}
+
+
+h2 {
+    color:rgb(96, 95, 95); 
+    font-weight: bold; 
+    font-size :24pt;
+}
+
+
+
+
+div {
+    text-align: center;
+    margin: 30px 30px 30px 30px;
+}
+
+
+.input {
+    height : 43px;
+    width: 260px;
+    margin-right: 30px;
+}
+
+.select {
+    height : 43px;
+    width: 80px;
+    margin-right: 30px;
+}
+
+.text {
+    font-size: 15pt;
+}
