@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Preview</title>
+    <style css="text/css">
+        @import url("CSS.css");
+    </style>
+    <script src="/css/mouse.js"></script>
+    <script src="preview.js"></script>
+</head>
+<body>
+    <div> <h2>Text Preview</h2></div>
+    <hr>
+    <div>
+        <input type="text" class="input" id="input"/>
+        <input type="button" class="btn" value="미리 보기"
+        onclick="onClick()"/><br>
+        <div>
+        <sapn class="text">색상 : </sapn>
+        <select name="color" id="color" class = "select">
+            <option class="text" value ="black">black</option>
+            <option class="text" value ="pink">pink</option>
+            <option class="text" value ="red">red</option>
+            <option class="text" value ="blue">blue</option>
+        </select>
+
+            <sapn class="text">크기 : </sapn>
+            <select name="size" id="size"  class = "select">
+                <option class="text" value ="10">10</option>
+                <option class="text" value ="15">15</option>
+                <option class="text" value ="20">20</option>
+            </select>
+        </div>
+
+        <div>
+            <span class="text">
+                <input type="checkbox" name="deco" value="line-through"> 취소선
+                <input type="checkbox" name="em" value="2"> 크게
+                <input type="checkbox" name="em" value="0.5"> 작게
+                <input type="checkbox" name="bold" id="bold" value="bold"> 두껍게
+                <input type="checkbox" name="style" value="italic"> 기울임<br>
+                <input type="checkbox" name="deco" value="overline"> 위첨자
+                <input type="checkbox" name="deco" value="underline"> 아래첨자
+                <input type="checkbox" name="transform" value="lowercase"> 소문자로
+                <input type="checkbox" name="transform" value="uppercase"> 대문자로
+            </span>
+        </div>
+
+        <span id="result"></span>
+    </div>
+
+</body>
+</html>

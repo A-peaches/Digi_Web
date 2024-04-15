@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function btn_ev() {
+            alert("이벤트 발생!");
+            let ob = {key1 : ['pipi','cici','cucu']};
+            let obj = new Object();
+            let obj2 = {key1 : '사과', key2 :'바나나'};
+            obj.key1 = 'apple';
+            obj.key2 = 'banana';
+            obj.key3 = 'grape';
+            console.log(obj);
+            console.log(obj2.key1);
+            console.log(ob.key1[0]);
+        }
+    </script>
+     <title>Document</title>
+</head>
+<body>
+    <h1>Object 실습</h1>
+    <button onclick="btn_ev()">이벤트 발생</button>
+</body>
+</html>
