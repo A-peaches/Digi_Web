@@ -95,7 +95,7 @@
   
   @font-face {
     font-family: "MyFont";
-    src: url('./assets/MyFont.ttf');
+    src: url('../assets/MyFont.ttf');
   }
   </style>
   
