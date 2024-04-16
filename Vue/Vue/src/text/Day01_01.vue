@@ -1,6 +1,6 @@
 <template>
     <div>
-    <img alt="Vue logo" src ="./assets/apeach5.gif">
+    <img alt="Vue logo" src ="../assets/apeach5.gif">
     <h2 :style="style1"> {{ data1 }} </h2>
     <span :class="{active: classC}">Class</span><br>
     <br><hr><br>
@@ -60,7 +60,7 @@
   }
   @font-face {
     font-family: "MyFont";
-    src: url('./assets/MyFont.ttf');
+    src: url('../assets/MyFont.ttf');
   }
   </style>
   
