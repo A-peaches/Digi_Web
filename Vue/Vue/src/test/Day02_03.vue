@@ -8,16 +8,26 @@
       second : {{ mem_second }}<br>
       full : {{ full }}
     </div><hr>
-    <div>
+  </div>
+    <div style="display:inline-block;">
       <h2 >📝 성적 입력</h2>
       <p>이름 : <input type="text" v-model="name"> </p>
       <p>국어 : <input type="number" v-model="kor"> </p>
       <p>영어 : <input type="number" v-model="eng"> </p>
       <p>수학 : <input type="number" v-model="mat"> </p>
       <p>총 합계 : {{ sum }} </p>
-      <button @click="insert">입력</button>
+      <p>⚠️ 기존에 동일한 이름이 있는 경우 입력 값으로 수정됩니다.</p>
+      <button @click="insert">입력 및 수정</button>&nbsp;&nbsp;&nbsp;
+      <button @click="getter">받아오기 테스트</button>
     </div>
-    </div>
+
+  <div v-for="li in stuList" :key="li" style="margin-top: 30px;">
+    이름 : {{ li.name }} |
+    국어 : {{ li.kor }} |
+    영어 : {{ li.eng }} |
+    수학 : {{ li.mat }} |
+  </div>
+
   </template>
     
     <script>
@@ -31,7 +41,8 @@
         kor : '',
         eng : '',
         mat : '',
-        obj : {}
+        obj : {},
+        testList : {}
       };
     },
     watch:{
@@ -49,6 +60,10 @@
       full(){
         return this.mem_first+this.mem_second;
       },
+
+      stuList(){
+        return this.$store.getters.getStu;
+      },
   
       sum(){
         if(!this.kor && !this.eng && !this.mat){
@@ -63,18 +78,24 @@
         this.obj = {name : this.name, kor : this.kor, eng:this.eng,
               mat: this.mat}
         this.$store.commit('addStu',this.obj);
+        this.name ='';
+      },
+
+      getter(){
+        this.testList = this.$store.getters.getStu;
+        console.log(this.testList);
       }
     },
-    components: {},
+    components: {
+  
+    },
   };
   </script>
     
     <style>
   div {
     font-family: "MyFont", Arial, Helvetica, sans-serif;
-    text-align: left;
     align-content: center;
-    margin: 30px 70px 30px 70px;
     font-size : 12pt;
   }
   

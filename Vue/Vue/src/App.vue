@@ -4,7 +4,10 @@
     <router-link to="/about">About</router-link> |
     <router-link to="/fashion">Fashion</router-link> |
     <router-link to="/restaurant">Restaurant</router-link> |
-    <router-link to="/grade">Restaurant</router-link> 
+    <router-link to="/grade">Grade</router-link> |
+    <router-link to="/forStu">ForStu</router-link> |
+    <router-link to="/comp">Component</router-link>  |
+    <router-link to="/axios">Axios</router-link> 
   <router-view/>
   </nav>
 </template>
