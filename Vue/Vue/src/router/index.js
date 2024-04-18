@@ -41,6 +41,11 @@ const routes = [
     path:'/axios',
     name : 'Axios Study',
     component : () => import('../test/03_04_Axios.vue')
+  },
+  {
+    path:'/node',
+    name : 'Node Study',
+    component : () => import('../test/14_node.vue')
   }
 ]
 
