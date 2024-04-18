@@ -7,7 +7,8 @@
     <router-link to="/grade">Grade</router-link> |
     <router-link to="/forStu">ForStu</router-link> |
     <router-link to="/comp">Component</router-link>  |
-    <router-link to="/axios">Axios</router-link> 
+    <router-link to="/axios">Axios</router-link> |
+    <router-link to="/node">Node</router-link> 
   <router-view/>
   </nav>
 </template>
