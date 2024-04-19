@@ -45,7 +45,7 @@ const routes = [
   {
     path:'/node',
     name : 'Node Study',
-    component : () => import('../test/14_node.vue')
+    component : () => import('@/test/14_node.vue')
   }
 ]
 
